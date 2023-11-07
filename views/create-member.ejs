@@ -1,0 +1,24 @@
+<!-- views/create-member.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Member</title>
+</head>
+<body>
+  <h1>Create Member</h1>
+  <form action="/create-member" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate" required><br>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" required></textarea><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
